@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Coding.PerWeek.Challenge.Challenges._2022.November
+﻿namespace Coding.PerWeek.Challenge.Challenges._2022.November
 {
-    public class AvarageExcludingMinAndMax
+    public class AverageExcludingMinAndMax
     {
         public double Average(int[] salary)
         {
-
             var max = salary.Max();
             var min = salary.Min();
 
