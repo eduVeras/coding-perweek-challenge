@@ -5,19 +5,18 @@
         public double Average(int[] salary)
         {
             var max = salary.Max();
+
             var min = salary.Min();
 
             double total = (salary.Sum() - (max + min)) / (salary.Length - 2.0);
 
             return total;
-
         }
-
 
         public double BetterSolution(int[] salary)
         {
-            int max = 0;
             int min = int.MaxValue;
+            int max = 0;
             int total = 0;
 
             var lenght = salary.Length;
