@@ -48,7 +48,6 @@
                             continueAgain = true;
                             continue;
                         }
-
                     }
                     total += 1;
                     continue;
