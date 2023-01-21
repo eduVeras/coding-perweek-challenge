@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Coding.PerWeek.Challenge.Challenges._2023.January
+﻿namespace Coding.PerWeek.Challenge.Challenges._2023.January
 {
     public class CanConstructProblem
     {
@@ -21,20 +15,22 @@ namespace Coding.PerWeek.Challenge.Challenges._2023.January
 
             var magazineArray = magazine.ToCharArray();
             var ransomNoteArray = ransomNote.ToCharArray();
-            foreach (char c in ransomNoteArray)
+
+            for (int i = 0; i < ransomNoteArray.Length; i++)
             {
-                var exists = magazineArray.Contains(c);
-                if(!exists)
+                var val = ransomNoteArray[i];
+                var exists = magazineArray.Contains(val);
+                if (!exists)
                     return false;
 
-                var countingRansom = ransomNoteArray.Count(e=> e==c);
+                var countingRansom = ransomNoteArray.Count(e => e == val);
 
-                var countintInMagazine = magazineArray.Count(e=> e==c);
-                if(countintInMagazine < countingRansom)
+                var countintInMagazine = magazineArray.Count(e => e == val);
+                if (countintInMagazine < countingRansom)
                 {
                     return false;
                 }
-            }
+            }           
 
             return true;
         }
