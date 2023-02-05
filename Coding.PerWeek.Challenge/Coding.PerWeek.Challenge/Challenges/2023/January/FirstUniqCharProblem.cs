@@ -6,7 +6,7 @@
         {
 
             var dic = new Dictionary<char, Tuple<int,int>>();
-
+            var counting = 0;
             var chars = s.ToCharArray();
             for (int i = 0; i < chars.Length; i++)
             {
