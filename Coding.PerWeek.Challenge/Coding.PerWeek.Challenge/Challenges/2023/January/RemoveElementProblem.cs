@@ -16,9 +16,11 @@ namespace Coding.PerWeek.Challenge.Challenges._2023.January
             {
                 if(nums[i] == val)
                 {
-                    nums[i] = null;
+                    nums[i] = 1;
                 }
             }
+
+            return 1;
         }
     }
 }
