@@ -6,7 +6,7 @@
         {
             var compare = paragraph.ToLower().Replace(",", " ").Replace(".", " ").Replace("!"," ").Replace("?"," ").Replace("'"," ").Replace(";"," ").Split(' ');
 
-            var dic = new Dictionary<string, int>();
+            var dic = new Dictionary<dynamic, dynamic>();
             for (int i = 0; i < compare.Length; i++)
             {
                 
