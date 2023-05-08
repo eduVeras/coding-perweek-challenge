@@ -19,7 +19,7 @@ namespace Coding.PerWeek.Challenge.Challenges._2023.April
                 int result = 0;
                 foreach(var num in charArray)
                 {
-                    result += Convert.ToInt32( num.ToString());
+                    result += Convert.ToInt32(num.ToString());
                 }
 
                 var addSuccess = dic.TryAdd(result, 1);
@@ -32,4 +32,7 @@ namespace Coding.PerWeek.Challenge.Challenges._2023.April
             return dic.MaxBy(kvp => kvp.Value).Value;
         }
     }
+
+
+
 }
